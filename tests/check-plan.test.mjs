@@ -49,7 +49,7 @@ describe("plan checklists", () => {
   for (const heading of [
     "### Arm the program",
     "### Spawn owners",
-    "### PR mechanics, for every PR",
+    "### Local mechanics, for every unit",
     "### Verdict and merge, for every PR",
     "### Boot recipe, for every live lane",
   ]) {

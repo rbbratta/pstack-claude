@@ -390,7 +390,7 @@ const CODEX_NOTES_HEADER = "| Skill | On Codex |";
 const CODEX_PREAMBLE =
   "On Codex, read the [platform mapping](../poteto-mode/references/codex-tools.md), including its per-skill notes, before following this skill.";
 const DRIVER_LINE = "Resolve the driver skill through [poteto-mode's Non-negotiables](../SKILL.md#non-negotiables).";
-const DRIVER_PLAYBOOKS = ["autopilot-full", "multi-phase-plan", "orchestrate", "refactoring", "shipping"];
+const DRIVER_PLAYBOOKS = ["multi-phase-plan", "orchestrate", "refactoring", "feature", "bug-fix", "perf-issue"];
 
 // The skills with a row in the Codex mapping's Per-skill notes table, in row order.
 export function codexNoteSkills(markdown) {

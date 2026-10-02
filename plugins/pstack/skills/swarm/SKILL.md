@@ -28,9 +28,9 @@ Open a todolist with one entry per phase before launching anything.
 
 ## Phase B: Fan out
 
-Spawn all N workers in one message with `subagent_type: "general-purpose"`, `run_in_background: true`, and the step 4 model, left unset for `auto` or `inherit-parent`. Claude Code subagents all run on this machine, so isolation comes from the worktree or output directory assigned in Phase A, not from a remote environment.
+Spawn all N workers in one message with `subagent_type: "general-purpose"`, `run_in_background: true`, and the step 4 model, left unset for `auto` or `inherit-parent`. Claude Code subagents all run on this machine, so isolation comes from the exclusive output directory assigned in Phase A, not from a remote environment.
 
-When a worker must start from a non-default branch, check that branch out in the worker's own worktree and name the worktree path in its brief.
+When a worker must start from a non-default branch, name the branch and either serialize checkout in the shared tree or give read-only SHAs in the brief without parallel checkouts.
 
 Every brief stands alone. Include the goal, scope, exact slice or race arm, how to verify, and what to report. Reports use `PASS`, `ISSUES`, or `BLOCKED` with evidence. A worker that can prove a defect reports `ISSUES` and lists every issue it can prove, not only the first.
 

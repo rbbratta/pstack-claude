@@ -49,12 +49,17 @@ const rules = [
   {
     source: "#58 delegate isolation",
     file: "poteto-mode/playbooks/feature.md",
-    phrase: "Give every file-writing delegate its own worktree",
+    phrase: "Give every file-writing delegate an exclusive scratch directory or serialize writers on the shared branch.",
+  },
+  {
+    source: "local workflow",
+    file: "poteto-mode/SKILL.md",
+    phrase: "One shared checkout and local commits.",
   },
   {
     source: "#59 item 1 drain the roster",
     file: "poteto-mode/playbooks/opening-a-pr.md",
-    phrase: "stop every one that holds it, including grandchildren you never launched",
+    phrase: "stop every one that still writes in this tree, including grandchildren you never launched",
   },
   {
     source: "#59 item 2 verify the process",
@@ -90,11 +95,6 @@ const rules = [
     source: "#59 item 7 severity picks the artifact",
     file: "poteto-mode/SKILL.md",
     phrase: "severity decides its artifact, not where it turned up",
-  },
-  {
-    source: "#86 confirm the first status read",
-    file: "poteto-mode/playbooks/babysit.md",
-    phrase: "confirm that the PR or stack it reports matches the request",
   },
 ];
 
